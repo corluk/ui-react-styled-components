@@ -1,0 +1,5 @@
+{
+    "editor.multiCursorModifier": "ctrlCmd",
+    "files.simpleDialog.enable" : true,
+    "css.lint.unknownAtRules": "ignore"
+}

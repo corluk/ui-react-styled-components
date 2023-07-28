@@ -1,0 +1,50 @@
+#!/bin/bash
+yarn init -y 
+yarn add axios\
+        i18next\
+        i18next-browser-languagedetector\
+        react\
+        react-dom\
+        react-i18next\
+        react-router-dom\
+        recoil \
+        @fortawesome/fontawesome-svg-core \
+        @fortawesome/free-solid-svg-icons \
+        @fortawesome/free-regular-svg-icons
+    yarn add -D @babel/core\
+                @babel/preset-env\
+                @babel/preset-react\
+                @babel/preset-typescript\
+                @testing-library/jest-dom\
+                @testing-library/react\
+                @testing-library/user-event\
+                @types/jest\
+                @types/react\
+                @types/react-dom\
+                @types/react-router-dom\
+                autoprefixer\
+                css-loader\
+                html-webpack-plugin\
+                jest\
+                jest-environment-jsdom\
+                mini-css-extract-plugin\
+                postcss\
+                postcss-loader\
+                postcss-preset-env\
+                style-loader\
+                tailwindcss\
+                ts-jest\
+                ts-loader\
+                ts-node\
+                tslib\
+                typescript\
+                web-vitals\
+                webpack\
+                webpack-cli\
+                webpack-dev-server\
+                webpack-merge\
+                mongodb
+               
+node build.js
+
+echo "**** don't forget to delete build scripts with  'rm build*'"
