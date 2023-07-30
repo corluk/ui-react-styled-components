@@ -9,7 +9,7 @@ module.exports = {
     entry  : "./src/index.tsx" ,
     
     output: {
-        path: path.join(__dirname, 'lib'),
+        path: path.join(__dirname, 'server',"assets"),
         filename: 'bundle.js',
         clean:true,
         publicPath:  "/"

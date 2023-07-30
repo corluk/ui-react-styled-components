@@ -3,11 +3,11 @@ const HtmlWebpackPlugin = require("html-webpack-plugin")
 const {merge}  = require("webpack-merge")
 const commons = require("./webpack.config") 
 const webpack = require("webpack")
-const webpackServer= require("./test/server/webpack.server")
+ 
 const path = require("path")
 module.exports = merge(commons,{
     output: {
-        path: path.join(__dirname, 'lib'),
+      path: path.join(__dirname, 'server',"assets"),
         filename: 'bundle.js',
         clean:true,
         publicPath : "/"
@@ -29,11 +29,11 @@ module.exports = merge(commons,{
       ],
    
         devServer: {
-            setupMiddlewares: (middlewares,devServer) => {// it's different for wepback v4
-             
-                webpackServer(devServer)
-                return middlewares
-        }   ,
+            
+              proxy : {
+                "/api"  : "http://localhost:3000"
+              },
+      
         //  static: "./public",
           compress: true,
           port: 9000,
