@@ -44,7 +44,8 @@ yarn add axios\
                 webpack-dev-server\
                 webpack-merge\
                 express  \
-                nodemon              
+                nodemon    \
+                concurrently         
                 
                
 node build.js

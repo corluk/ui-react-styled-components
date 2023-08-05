@@ -27,7 +27,7 @@ module.exports = merge(commons,{
           DEBUG: true,
         })//, new MiniCssExtractPlugin()
       ],
-   
+      /*
         devServer: {
             
               proxy : {
@@ -45,5 +45,5 @@ module.exports = merge(commons,{
           allowedHosts : "all"
         
         },
-    
+        */
 })
