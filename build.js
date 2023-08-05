@@ -8,7 +8,7 @@ package.scripts = {
     "devServer": "NODE_PROXY=http://localhost:3000 nodemon server/index.tsx",
     "dev": "concurrently \"yarn dev\"  \"yarn devServer\" ",
     "publishMinor": "yarn compile &&  yarn version --minor && yarn publish " , 
-    "publishMajor" : "yarn compile &&  yarn version --ajor  && yarn publish " , 
+    "publishMajor" : "yarn compile &&  yarn version --major  && yarn publish " , 
 }
 
 package.publishConfig = {
